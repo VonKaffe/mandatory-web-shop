@@ -1,60 +1,81 @@
-var headline = document.createElement("h1");
-var headtext = document.createTextNode("Coffee");
-headline.appendChild(headtext);
 
-var para = document.createElement("p");
-var paratext = document.createTextNode("179£");
-para.appendChild(paratext);
 
-var subh = document.createElement("h2");
-var subheader = document.createTextNode("Antique Coffee Grinder");
-subh.appendChild(subheader);
+let elem = document.createElement("img");
+elem.setAttribute("height", "200");
+elem.setAttribute("width", "200");
+elem.setAttribute("alt", "Coffee Grinder");
+document.getElementById("image1").appendChild(elem);
 
-var pic = document.createElement("img");
-pic.setAttribute("src", "coffegrinder.jpg");
 
-var div0 = document.createElement("div");
-div0.appendChild(headline);
-div0.appendChild(para);
-div0.appendChild(subh);
-div0.appendChild(pic);
-var existingElement = document.getElementsByTagName("body")[0];
-existingElement.appendChild(div0);
+let elem2 = document.createElement("img");
 
-var x = document.getElementsByTagName("img")[0].style.width = "400px";
+elem2.setAttribute("width", "200");
+elem2.setAttribute("alt", "Beans");
+document.getElementById("image2").appendChild(elem2);
 
-var y = document.getElementsByTagName("h1")[0].style.color="black";
 
-var z = document.getElementsByTagName("h2")[0].style.color="gray";
 
-var hline = document.createElement("h1");
-var htext = document.createTextNode("Coffee Beans");
-hline.appendChild(htext);
+let elem3 = document.createElement("img");
+elem2.setAttribute("width", "200");
+elem2.setAttribute("alt", "Store Sign");
+document.getElementById("image3").appendChild(elem3);
 
-var par = document.createElement("p");
-var ptext = document.createTextNode("179£");
-par.appendChild(ptext);
 
-var sh = document.createElement("h2");
-var suh = document.createTextNode("Zoegas Coffee Beans");
-sh.appendChild(suh);
 
-var picture = document.createElement("img");
-picture.setAttribute("src", "beans.jpg");
 
-var divo = document.createElement("div");
-divo.appendChild(hline);
-divo.appendChild(par);
-divo.appendChild(sh);
-divo.appendChild(picture);
-var hH = document.getElementsByTagName("body")[0];
-hH.appendChild(divo);
 
-var q = document.getElementsByTagName("img")[1].style.width = "400px";
+let product1 = [
+    "Coffee Beans",
+    "Zoegas Coffee Beans",
+    699,
+    elem.src = 'beans.jpg'
+];
 
-var w = document.getElementsByTagName("h1")[1].style.color="black";
+let product2 = [
+    "Antique Coffee Grinder",
+    "Traditonal",
+    499,
+    elem2.src = 'coffegrinder.jpg'
+];
 
-var e = document.getElementsByTagName("h2")[1].style.color="gray";
 
-let  d =document.getElementsByTagName("div")[1].style.float = "right";
+let product3 = [
+    "Company Made sign",
+    "To Open Bussinesses",
+    100,
+    elem3.src = 'Coffeelogo.jpg'
+
+
+
+];
+
+
+let pName1 = product1[0];
+let pPrice1 = product1[1];
+let pDesc1 = product1[2];
+
+let pName2 = product2[0];
+let pPrice2 = product2[1];
+let pDesc2 = product2[2];
+
+let pName3 = product3[0];
+let pPrice3 = product3[1];
+let pDesc3 = product3[2];
+
+
+
+document.getElementById("name1").innerHTML = pName1;
+document.getElementById("price1").innerHTML = pPrice1 + ":-";
+document.getElementById("description1").innerHTML = pDesc1;
+
+document.getElementById("name2").innerHTML = pName2;
+document.getElementById("price2").innerHTML = pPrice2 + ":-";
+document.getElementById("description2").innerHTML = pDesc2;
+
+document.getElementById("name3").innerHTML = pName3;
+document.getElementById("price3").innerHTML = pPrice3 + ":-";
+document.getElementById("description3").innerHTML = pDesc3;
+
+
+
 
