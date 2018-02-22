@@ -1,31 +1,31 @@
 function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
+    var firstName = document.forms["myForm"]["fname"].value;
+    if (firstName == "") {
         alert("First Name must be filled out");
         return false;
     }
-    var y = document.forms["myForm"]["lname"].value;
-    if (y == "") {
+    var lastName = document.forms["myForm"]["lname"].value;
+    if (lastName == "") {
         alert("Last Name must be filled out");
         return false;
     }
-    var z = document.forms["myForm"]["mail"].value;
-    if (z == "") {
+    var email= document.forms["myForm"]["mail"].value;
+    if (email == "") {
         alert("Email must be filled out");
         return false;
     }
-    var q = document.forms["myForm"]["address"].value;
-    if (q == "") {
+    var address = document.forms["myForm"]["address"].value;
+    if (address == "") {
         alert("Street address must be filled out");
         return false;
     }
-    var w = document.forms["myForm"]["zip"].value;
-    if (w == "") {
+    var zip = document.forms["myForm"]["zip"].value;
+    if (zip == "") {
         alert("Zip code must be filled out");
         return false;
     }
-    var e = document.forms["myForm"]["city"].value;
-    if (e == "") {
+    var city = document.forms["myForm"]["city"].value;
+    if (city == "") {
         alert("City must be filled out");
         return false;
     }

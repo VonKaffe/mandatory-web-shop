@@ -24,57 +24,45 @@ document.getElementById("image3").appendChild(elem3);
 
 
 
-let product1 = [
-    "Coffee Beans",
-    "Zoegas Coffee Beans",
-    699,
-    elem.src = 'beans.jpg'
-];
+let products = [
+    {
+        name: "Zoegas Coffee Beans",
+        price: 699,
+        description: "Coffee Beans",
+        image: "beans.jpg"
+    },
+    {
+        name: "Beans",
+        price: 499,
+        description: "Traditional",
+        image: 'coffegrinder.jpg'
+    },
 
-let product2 = [
-    "Antique Coffee Grinder",
-    "Traditonal",
-    499,
-    elem2.src = 'coffegrinder.jpg'
-];
-
-
-let product3 = [
-    "Company Made sign",
-    "To Open Bussinesses",
-    100,
-    elem3.src = 'Coffeelogo.jpg'
-
-
-
-];
-
-
-let pName1 = product1[0];
-let pPrice1 = product1[1];
-let pDesc1 = product1[2];
-
-let pName2 = product2[0];
-let pPrice2 = product2[1];
-let pDesc2 = product2[2];
-
-let pName3 = product3[0];
-let pPrice3 = product3[1];
-let pDesc3 = product3[2];
+    {
+        name: "Sign",
+        price: 449,
+        description: "Bussiness Sign",
+        image: 'Coffeelogo.jpg'
+    }];
 
 
 
-document.getElementById("name1").innerHTML = pName1;
-document.getElementById("price1").innerHTML = pPrice1 + ":-";
-document.getElementById("description1").innerHTML = pDesc1;
 
-document.getElementById("name2").innerHTML = pName2;
-document.getElementById("price2").innerHTML = pPrice2 + ":-";
-document.getElementById("description2").innerHTML = pDesc2;
+document.getElementById("name1").innerHTML = products[0].name;
+document.getElementById("price1").innerHTML = products[0].price + ":-";
+document.getElementById("description1").innerHTML = products[0].description;
+elem.src=products[0].image;
 
-document.getElementById("name3").innerHTML = pName3;
-document.getElementById("price3").innerHTML = pPrice3 + ":-";
-document.getElementById("description3").innerHTML = pDesc3;
+
+document.getElementById("name2").innerHTML = products[1].name;
+document.getElementById("price2").innerHTML = products[1].price + ":-";
+document.getElementById("description2").innerHTML = products[1].description;
+elem2.src=products[1].image;
+
+document.getElementById("name3").innerHTML = products[2].name;
+document.getElementById("price3").innerHTML = products[2].price + ":-";
+document.getElementById("description3").innerHTML = products[2].description;
+elem3.src=products[2].image;
 
 
 
